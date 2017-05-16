@@ -1,0 +1,29 @@
+{
+  "name": "runna-webserver",
+  "version": "0.1.1",
+  "description": "Development server with auto reload",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gavoja/runna-webserver.git"
+  },
+  "keywords": [
+    "http",
+    "web",
+    "server",
+    "auto",
+    "reload"
+  ],
+  "author": "Michal Kochel",
+  "license": "MIT",
+  "bin": {
+    "runna-webserver": "./bin/runna-webserver"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "mime-types": "^2.1.15",
+    "minimist": "^1.2.0",
+    "path-sort": "^0.1.0",
+    "ws": "^2.3.1"
+  }
+}
