@@ -17,7 +17,7 @@ const INJECT = `
 class Server {
   init (args) {
     this.hostname = args.hostname || 'localhost'
-    this.port = args.port || 8000
+    this.port = process.env.PORT || (args.port || 8000)
     this.cwd = args.cwd ? path.join(process.cwd(), args.cwd) : process.cwd()
     this.app = args.app || express()
   }
